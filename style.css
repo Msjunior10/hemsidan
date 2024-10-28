@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    line-height: 75px;
+    font-size: 50px;
+    color: red;
+}
+
+.link2 {
+    background-image: linear-gradient(to top, grey, transparent);
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    border: outset, black;
+    overflow: auto;
+    transform: translate(20px,50px);
+}
+
+
+.yes{
+    font-size: 24px;
+    font-weight: bold;
+    font-style:italic;
+    color: rgb(255, 0, 0);
+    
+}
+body {
+    background-image:linear-gradient(to right, black 10%, transparent);
+    background-size: cover;
+}
+
+.test{
+   width: 1000px;
+   height: 599px;
+   background-image: url(img.jpg);
+   transform: translate(550px,-593px);
+   border: outset, black;
+}
+
+.link{
+    width: 130px;
+    height: 40px;
+    transform: translate(30px,-30px);
+    background: rgb(138, 137, 137);
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style:italic;
+}
