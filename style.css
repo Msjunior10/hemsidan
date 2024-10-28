@@ -1,51 +1,69 @@
-h1{
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    line-height: 75px;
+*{
+    font-family:cursive;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(8, 8, 56), #000000 );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-shadow: -6px 3px 30px rgb(160, 12, 12), 3px -6px 50px rgb(0, 0, 255);
+    background-color: rgb(19, 19, 34);
+    border-radius: 30px;
+}
+.container{
+    width: 90%;
+    height: 850px;
+    background-image: 
+    linear-gradient(to right, #22236442, #000000),
+    url(computer.png)
+    ;
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right, #22236442, transparent),
+    url(computer.png)
+    ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
     font-size: 50px;
-    color: red;
+    text-transform: uppercase;
 }
 
-.link2 {
-    background-image: linear-gradient(to top, grey, transparent);
-    width: 500px;
-    height: 600px;
+ul{
+    width: 45%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+
+.content{
+    transform: translate(0,10px);
+    width: 550px;
+    height: 750px;
+    overflow-y: auto;
+}
+.container p{
+    color: white;
     padding: 10px;
-    border: outset, black;
-    overflow: auto;
-    transform: translate(20px,50px);
-}
-
-
-.yes{
-    font-size: 24px;
-    font-weight: bold;
-    font-style:italic;
-    color: rgb(255, 0, 0);
-    
-}
-body {
-    background-image:linear-gradient(to right, black 10%, transparent);
-    background-size: cover;
-}
-
-.test{
-   width: 1000px;
-   height: 599px;
-   background-image: url(img.jpg);
-   transform: translate(550px,-593px);
-   border: outset, black;
-}
-
-.link{
-    width: 130px;
-    height: 40px;
-    transform: translate(30px,-30px);
-    background: rgb(138, 137, 137);
-    border-radius: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    font-style:italic;
+    letter-spacing: 3px;
+    text-shadow: -6px 3px 30px rgb(160, 12, 12), 3px -6px 50px rgb(0, 0, 255);
+    font-size: large;
 }
