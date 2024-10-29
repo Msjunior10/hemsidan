@@ -2,7 +2,7 @@
     font-family:cursive;
 }
 
-body{
+.startsida{
     background-image: linear-gradient(to right, rgb(8, 8, 56), #000000 );
     height: 100vh;
     display: flex;
@@ -15,10 +15,11 @@ a{
     text-shadow: -6px 3px 30px rgb(160, 12, 12), 3px -6px 50px rgb(0, 0, 255);
     background-color: rgb(19, 19, 34);
     border-radius: 30px;
+    transition: 1s;
 }
 .container{
-    width: 90%;
-    height: 850px;
+    width: 100%;
+    height: 800px;
     background-image: 
     linear-gradient(to right, #22236442, #000000),
     url(computer.png)
@@ -28,6 +29,7 @@ a{
     background-image: 
     linear-gradient(to right, #22236442, transparent),
     url(computer.png)
+    
     ;
 }
 header{
@@ -37,8 +39,9 @@ header{
 }
 
 .logo{
-    font-size: 50px;
+    font-size: 46px;
     text-transform: uppercase;
+    
 }
 
 ul{
@@ -55,10 +58,11 @@ ul a:hover{
 }
 
 .content{
-    transform: translate(0,10px);
-    width: 550px;
-    height: 750px;
+    transform: translate(5px,10px);
+    width:35%;
+    height:720px;
     overflow-y: auto;
+
 }
 .container p{
     color: white;
@@ -66,4 +70,177 @@ ul a:hover{
     letter-spacing: 3px;
     text-shadow: -6px 3px 30px rgb(160, 12, 12), 3px -6px 50px rgb(0, 0, 255);
     font-size: large;
+    z-index: 1;
+}
+.no{
+    width:100%;
+    height:100px;
+    color:white;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-shadow: 6px 8px 10px red, -6px -8px 10px blue;
+    font-weight: bold;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(8, 8, 56), #000000 );
+    height: 100vh;
+}
+.kurs{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(CSS.jpeg);
+     width:400px;
+    height:500px;
+    transform: translate(5px, 20px);  
+    border:double 10px blue;
+    box-shadow: 15px 8px 40px 15px rgb(0, 4, 255);
+}
+.kurs:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(CSS.jpeg)
+}
+.photo{
+    transform: translate(0px,15px);
+}
+.fotcss{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(rgb(0, 0, 255),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px white, -6px -8px 15px blue;
+    font-weight: bold;
+}
+
+.kurs2{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(HTML.jpg);
+    width:400px;
+   height:500px;
+   transform: translate(730px,-495px);
+   border: double 10px orange;
+   box-shadow: 15px 8px 40px 15px orange;
+}
+.kurs2:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(HTML.jpg);
+}
+.fothtml{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(orange,white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px black, -6px -8px 15px orange;
+    font-weight: bold;
+}
+
+.kurs3{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Javascript.jpg);
+    width:400px;
+   height:500px;
+   transform: translate(1460px,-1015px);
+   border: double 10px  yellow;
+   box-shadow: 15px 8px 40px 15px yellow;
+
+}
+.kurs3:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(Javascript.jpg);
+}
+.fotjavascript{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(yellow,white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px black, -6px -8px 15px yellow;
+    font-weight: bold;
+}
+
+.kurs4{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(C++.jpg);
+    width:400px;
+   height:500px;
+   transform: translate(5px,-950px);
+   border: double 10px  white; 
+   box-shadow: 15px 8px 40px 15px white;
+}
+
+.kurs4:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(C++.jpg);
+}
+
+.fotcplus{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(rgb(87, 87, 231),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px blue, -6px -8px 15px white;
+    font-weight: bold;
+}
+.kurs5{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Csharp.jpg);
+    width:400px;
+   height:500px;
+   transform: translate(733px,-1468px);
+   border: double 10px  rgb(255, 0, 242); 
+   box-shadow: 15px 8px 40px 15px rgb(255, 0, 242);
+}
+.kurs5:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(Csharp.jpg);
+}
+
+.fotcsharp{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(rgb(255, 0, 242),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px rgb(255, 255, 255), -6px -8px 15px rgb(247, 0, 255);
+    font-weight: bold;
+}
+
+.kurs6{
+    background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Python.png);
+    width:400px;
+   height:500px;
+   transform: translate(1460px,-1980px);
+   border: double 10px  rgb(0, 174, 255); 
+   box-shadow: 15px 8px 40px 15px rgb(0, 174, 255);
+}
+
+.kurs6:hover{
+    background-image: linear-gradient(to right, transparent, transparent), 
+    url(Python.png);
+}
+
+.fotpython{
+    width: 100%;
+    height: 82px;
+    background-image: linear-gradient(rgb(0, 174, 255),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px rgb(0, 174, 255), -6px -8px 15px white;
+    font-weight: bold;
 }
