@@ -1,3 +1,4 @@
+
 *{
     font-family:cursive;
 }
@@ -97,7 +98,7 @@ body{
 }
 .kurs:hover{
     background-image: linear-gradient(to right, transparent, transparent), 
-    url(CSS.jpeg)
+    url(CSS.jpeg);
 }
 .photo{
     transform: translate(0px,15px);
@@ -222,7 +223,7 @@ body{
     background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Python.png);
     width:400px;
    height:500px;
-   transform: translate(1460px,-1980px);
+   transform: translate(1460px,-1990px);
    border: double 10px  rgb(0, 174, 255); 
    box-shadow: 15px 8px 40px 15px rgb(0, 174, 255);
 }
@@ -244,3 +245,163 @@ body{
     text-shadow: 6px 8px 15px rgb(0, 174, 255), -6px -8px 15px white;
     font-weight: bold;
 }
+
+.boza{
+    margin:3px;
+    background-image: linear-gradient(to bottom, rgba(8, 8, 56, 0.897), #000000 );
+    height: 100vh;
+}
+
+.bozza{
+    margin: 2px;
+    width: 100%;
+    height: 75%;
+    background-image: 
+    linear-gradient(to bottom, #222364a9, #000000a2),
+    url(Contact.jpg);
+ }
+.fom,h2,form,fieldset,legend{
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: outset black 4px;
+}
+.fom{
+    margin: 2px;
+    padding: 20px;
+    border: outset 4px black;
+    width: 30%;
+    height: 675px;
+    background-image: linear-gradient(to bottom right, rgba(55, 55, 255, 0.658),rgba(255, 115, 0, 0.685));
+    border-radius: 30px;
+}
+
+.fotyes{
+    width: 100%;
+    height:25%;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, rgba(55, 55, 255, 0.658),rgba(255, 115, 0, 0.685));
+    display: flex;
+    flex-direction: column;
+    border: outset 4px black;
+}
+.fotyes div{
+    width: 30%;
+    padding: 5px;
+    color: black
+    margin-left:20px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+button{
+    border: outset black 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width:450px)
+    {
+    .logo{
+        font-size: 15px;}
+
+        .content{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:450px)
+    {
+        ul{
+            font-size: 8px;
+        }
+    }
+
+     @media screen and (max-width:450px)
+    {
+        .photo{
+            width: 300px;
+            height: 400px;
+        }
+        .kurs{
+            width: 350px;
+        }
+        .kurs2{
+            width: 350px;
+            transform: translate(0px,2000px);
+        }
+        .kurs3{
+            width: 350px;
+            transform: translate(0px, 2100px);
+        }
+
+        .kurs4{
+            width: 350px;
+           transform:translate(0px,-900px) ;
+        }
+
+        .kurs5{
+            width: 350px;
+            transform: translate(0px,-800px);
+           
+        }
+
+        .kurs6{
+            width: 350px;
+            transform: translate(0px,-700px);
+        }
+        .bozza{
+            margin: 2px;
+            width: 420px;
+            height: 75%;
+         }
+         .fom{
+            margin: 2px;
+            padding: 20px;
+            border: solid black;
+            width: 80%;
+            height: 650px;
+            background-image: linear-gradient(to bottom right, rgba(55, 55, 255, 0.658),rgba(255, 115, 0, 0.685));
+            border-radius: 30px;
+        }
+        .fom,form,fieldset,legend{
+            font-size: 12px;
+            width: 333px;
+            border: outset black 2px;
+        }
+        .fom,h2{
+            font-size: 12px;
+        }    
+
+        .fotyes{
+            width: 375px;
+            height:25%;
+        }
+        .fotyes div{
+            color: black;
+            width: 100%%;
+            padding: 5px;
+            font-size: 12px;
+        }
+        .are{
+              width: 310px;
+              height: 345px;
+        }
+        fieldset{
+            width: 310px;
+            height: 575px;
+        }
+        .leg{
+            font-size: 18px;
+
+        }
+        button{
+            font-size: 13px;
+            border-radius: 8px;
+        }
+        
+
+
+        
+    }
