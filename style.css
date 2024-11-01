@@ -16,6 +16,7 @@ a{
     background-color: rgb(19, 19, 34);
     border-radius: 30px;
     transition: 1s;
+    font-weight: bold;
 }
 .container{
     width: 100%;
@@ -72,7 +73,7 @@ ul a:hover{
     font-size: large;
     z-index: 1;
 }
-.no{
+/*.no{
     width:100%;
     height:100px;
     color:white;
@@ -81,7 +82,7 @@ ul a:hover{
     text-transform: capitalize;
     text-shadow: 6px 8px 10px red, -6px -8px 10px blue;
     font-weight: bold;
-}
+}*/
 
 body{
     background-image: linear-gradient(to right, rgb(8, 8, 56), #000000 );
@@ -100,19 +101,8 @@ body{
     url(CSS.jpeg);
 }
 .photo{
-    transform: translate(0px,15px);
-}
-.fotcss{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(rgb(0, 0, 255),white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px white, -6px -8px 15px blue;
-    font-weight: bold;
+    transform: translate(10px,20px);
+    width: 350px;
 }
 
 .kurs2{
@@ -127,18 +117,6 @@ body{
     background-image: linear-gradient(to right, transparent, transparent), 
     url(HTML.jpg);
 }
-.fothtml{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(orange,white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px black, -6px -8px 15px orange;
-    font-weight: bold;
-}
 
 .kurs3{
     background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Javascript.jpg);
@@ -152,18 +130,6 @@ body{
 .kurs3:hover{
     background-image: linear-gradient(to right, transparent, transparent), 
     url(Javascript.jpg);
-}
-.fotjavascript{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(yellow,white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px black, -6px -8px 15px yellow;
-    font-weight: bold;
 }
 
 .kurs4{
@@ -180,18 +146,6 @@ body{
     url(C++.jpg);
 }
 
-.fotcplus{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(rgb(87, 87, 231),white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px blue, -6px -8px 15px white;
-    font-weight: bold;
-}
 .kurs5{
     background-image: linear-gradient(to right, rgba(8, 8, 56, 0.555), #000000cc), url(Csharp.jpg);
     width:400px;
@@ -203,19 +157,6 @@ body{
 .kurs5:hover{
     background-image: linear-gradient(to right, transparent, transparent), 
     url(Csharp.jpg);
-}
-
-.fotcsharp{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(rgb(255, 0, 242),white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px rgb(255, 255, 255), -6px -8px 15px rgb(247, 0, 255);
-    font-weight: bold;
 }
 
 .kurs6{
@@ -230,19 +171,6 @@ body{
 .kurs6:hover{
     background-image: linear-gradient(to right, transparent, transparent), 
     url(Python.png);
-}
-
-.fotpython{
-    width: 100%;
-    height: 82px;
-    background-image: linear-gradient(rgb(0, 174, 255),white);
-    transform: translate(0px,12px);
-    letter-spacing: 4px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-shadow: 6px 8px 15px rgb(0, 174, 255), -6px -8px 15px white;
-    font-weight: bold;
 }
 
 .boza{
@@ -288,7 +216,7 @@ body{
 .fotyes div{
     width: 30%;
     padding: 5px;
-    color: black
+    color: black;
     margin-left:20px;
     word-spacing: 2px;
     letter-spacing: 1.5px;
@@ -300,6 +228,363 @@ button{
     font-size: 20px;
 }
 
+.marquee, .marquee2 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 56), #000000);
+    position: relative;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-shadow: 6px 8px 10px red, -6px -8px 10px blue;
+    font-weight: bold;
+
+}
+
+.marquee p, .marquee2 p {
+    display: inline-block;
+    margin: 0;
+}
+
+.marquee p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee2 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee3, .marquee4 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 255),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px white, -6px -8px 15px blue;
+    font-weight: bold;
+
+}
+
+.marquee3 p, .marquee4 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee3 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee4 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee5, .marquee6 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: linear-gradient(orange,white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px black, -6px -8px 15px orange;
+    font-weight: bold;
+
+}
+
+.marquee5 p, .marquee6 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee5 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee6 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee7, .marquee8 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; 
+    background-image: linear-gradient(yellow,white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px black, -6px -8px 15px yellow;
+    font-weight: bold;
+}
+
+.marquee7 p, .marquee8 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee7 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee8 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee9, .marquee10 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; 
+    background-image: linear-gradient(rgb(87, 87, 231),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px blue, -6px -8px 15px white;
+    font-weight: bold;
+}
+
+.marquee9 p, .marquee10 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee9 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee10 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee11, .marquee12 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; 
+    background-image: linear-gradient(rgb(255, 0, 242),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px rgb(255, 255, 255), -6px -8px 15px rgb(247, 0, 255);
+    font-weight: bold;
+}
+
+.marquee11 p, .marquee12 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee11 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee12 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee13, .marquee14 {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%; 
+    background-image: linear-gradient(rgb(0, 174, 255),white);
+    transform: translate(0px,12px);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 6px 8px 15px rgb(0, 174, 255), -6px -8px 15px white;
+    font-weight: bold;
+}
+
+.marquee13 p, .marquee14 p {
+    display: inline-block;
+    margin: 4px;
+}
+
+.marquee13 p {
+    animation: scroll-right 45s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee14 p {
+    animation: scroll-left 45s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.h2{
+    color: white;
+}
+.h3{
+    color: white;
+}
+.h1{
+    text-align: center;
+}
+
+input{
+    border-radius: 6px;
+    border: outset 4px black;
+}
+textarea{
+    border-radius: 6px;
+    border: outset 4px black;
+}
+legend{
+    font-size: 21px;
+}
+
+.fotno{
+    width: 100%;
+    height:25%;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, rgba(55, 55, 255, 0.658),rgba(255, 115, 0, 0.685));
+    display: flex;
+    flex-direction: column;
+    border: outset 4px black;
+}
+
+
 @media screen and (max-width:450px)
     {
     .logo{
@@ -308,6 +593,9 @@ button{
         .content{
             width: 100%;
         }
+    }
+    .photo{
+        transform: translate(25px,14px);
     }
 
     @media screen and (max-width:450px)
@@ -352,7 +640,7 @@ button{
         }
         .bozza{
             margin: 2px;
-            width: 420px;
+            width: 460px;
             height: 75%;
          }
          .fom{
@@ -366,7 +654,7 @@ button{
         }
         .fom,form,fieldset,legend{
             font-size: 12px;
-            width: 333px;
+            width: 440px;
             border: outset black 2px;
         }
         .fom,h2{
@@ -374,25 +662,31 @@ button{
         }    
 
         .fotyes{
-            width: 375px;
-            height:25%;
+            width: 480px;
+            height: 350px;
+        }
+        .fotno{
+            width: 480px;
+            height: 350px;
         }
         .fotyes div{
+
             color: black;
-            width: 100%%;
+            width:100%% ;
             padding: 5px;
-            font-size: 12px;
+            font-size:12px;
         }
         .are{
-              width: 310px;
+              width: 300px;
               height: 345px;
         }
         fieldset{
             width: 310px;
-            height: 575px;
+            height: 578px;
         }
         .leg{
             font-size: 18px;
+            width: 400px;
 
         }
         button{

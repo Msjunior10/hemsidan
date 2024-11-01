@@ -3,57 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Programmeringskolan/kontaktaoss</title>
+    <link href="logo.jpg" type="image/x-icon" rel="icon">
+    <meta name="description" content="Programmering and web devoloping">
+    <meta name="author" content="Matai SOMI">
+    <meta name="keywords" content="Html, css, coding, programming, c#, c++, python, programmingschool">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="boza">
     <div class="bozza">
         <div class="fom">
-            <center>
-                <h1>Kontakta Oss</h1>
-            </center>
+                <h1 class="h1">Kontakta Oss</h1>
             <form>
-                <style>
-                    input{
-                        border-radius: 6px;
-                        border: outset 4px black;
-                    }
-                    textarea{
-                        border-radius: 6px;
-                        border: outset 4px black;
-                    }
-                    legend{
-                        font-size: 21px;
-                    }
-                    
-                    
-                </style>
-
                 <fieldset class="fild">
                     <legend class="leg">"skicka till oss ett meddelande"</legend>
                    <p><label for="name">Name:</label>
-                   <input autofocus for="name" name="Name" type="text" placeholder="enter your first & last name" required> </p>
+                   <input minlength="3" autofocus id="name" name="Name" type="text" placeholder="enter your first & last name" required> </p>
 
                    <p><label for="email">Email:</label>
                     <input name="Email" id="email" type="email" placeholder="Enter your email" required></p> 
 
-                    <p><label for="Ärande">Ärande:</label>
-                        <input name="Ärande" list="Ärande" placeholder="Välj Ärande" required>
-                        <datalist id="Ärande">
+                    <p><label>Ärande:</label>
+                        <input name="Arande" list="Arande" placeholder="Välj Ärande" required>
+                        <datalist id="Arande">
                             <option value="Ser Inte Kurserna!">Ser Inte Kurserna!</option>
                             <option value="Kan Inte Logga In">Kan Inte Logga In</option>
-                            <option value="Mitt Betald Sätt Fungerar inte"> Mitt Betald Sätt Fungerar inte</option>
-                            <option value="Jag Vill Lämna Feedback"> Jag Vill Lämna Feedback</option>
+                            <option value="Mitt Betald Satt Fungerar inte"> Mitt Betald Sätt Fungerar inte</option>
+                            <option value="Jag Vill Lamna Feedback"> Jag Vill Lämna Feedback</option>
                         </datalist>
                     </p>
                     <p>
                         <label for="message">Meddelandet:</label>
                         <br>
-                        <textarea name="content" class="are" id="message" cols="63" rows="16" placeholder="Skriv ditt meddelande här" required></textarea>
+                        <textarea  name="content" class="are" id="message" cols="60" rows="15" placeholder="Skriv ditt meddelande här" required></textarea>
                     </p>
                     <button>Send </button>
                     <button>Reset</button>
@@ -75,9 +59,6 @@
         
     </footer>
     
-    
-
-<body>
 
 </body>
 
